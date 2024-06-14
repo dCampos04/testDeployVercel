@@ -10,7 +10,7 @@ import { AuthenticationSignUpDTORequest } from '../interfaces/AuthenticationSign
 })
 export class AuthService {
 
-  public baseUrl: string = environment.apiUrl;
+  public baseUrl: string = environment.backend_principal_url;
 
  constructor(private http: HttpClient) { }
 

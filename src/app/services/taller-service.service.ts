@@ -10,7 +10,7 @@ import { OperationDTOResponse } from '../interfaces/ServicioDTO';
 })
 export class TallerServiceService {
 
-  public baseUrl: string = environment.apiUrl;
+  public baseUrl: string = environment.backend_principal_url;
 
   constructor(private http: HttpClient) { }
 
@@ -21,7 +21,7 @@ export class TallerServiceService {
   getAllServiceToRepair(): Observable<OperationDTOResponse[]> {
     return this.http.get<OperationDTOResponse[]>(`${this.baseUrl}/api/operations/reparacion`);
   }
-  
+
   getAllServices(): Observable<OperationDTOResponse[]> {
     return this.http.get<OperationDTOResponse[]>(`${this.baseUrl}/api/operations/all`);
   }

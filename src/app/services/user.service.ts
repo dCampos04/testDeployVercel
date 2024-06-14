@@ -9,7 +9,7 @@ import { InformationResponseDTO } from '../interfaces/InformationResponseDTO';
 })
 export class UserService {
 
-  public baseUrl: string = environment.apiUrl;
+  public baseUrl: string = environment.backend_principal_url;
 
   constructor(private http: HttpClient) { }
 

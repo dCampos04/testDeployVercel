@@ -13,7 +13,7 @@ import { MechanicDetailsDTOResponse } from '../interfaces/MechanicDetailsDTOResp
   providedIn: 'root',
 })
 export class MechanicService {
-  public baseUrl: string = environment.apiUrl;
+  public baseUrl: string = environment.backend_principal_url;
   private _refresh$ = new Subject<void>();
 
   constructor(private http: HttpClient) {}

@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class AssignmentService {
 
-  public baseUrl: string = environment.apiUrl;
+  public baseUrl: string = environment.backend_principal_url;
 
   constructor(private http: HttpClient) { }
 
